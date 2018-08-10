@@ -87,7 +87,7 @@ body {
 
 .logo {
     flex-shrink: 0;
-    max-height: 20vh;
+    /* max-height: 20vh; */
     margin-top: 2vh;
     margin-bottom: 4vh;
     transition: all 0.3s;
@@ -96,15 +96,31 @@ body {
 .logo:hover{
     transform: scale(1.05);
 }
-
+#logoSvg  {
+  display: inline-block;
+  max-height: 20vh;
+}
+#logoText {
+  display: inline-block;
+  margin-left: -16px;
+  max-height: 20vh;
+}
 @media only screen and (max-width: 992px) {
     .logo {
-        max-height: 15vh;
+        /* max-height: 15vh; */
         margin-top: 2vh;
         margin-bottom: 2vh;
     }
     .bottom-line {
         font-size: 12px;
+    }
+    #logoSvg  {
+      max-height: 15vh;
+    }
+    #logoText {
+      max-height: 15vh;
+      margin-left: -36px;
+
     }
 }
 /* #botaoDogo {
