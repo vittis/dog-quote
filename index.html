@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Dog And Quote</title>
+
+  <meta name="theme-color" content="#b27175" />
+  <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+
+<body>
+  <div class="top-line"></div>
+  <div class="mainContainer container">
+    <a href="/"><img src="./img/logo_grande3.png" class="logo responsive-img"></a>
+    
+    <img onclick="onClickBotao();" id="dogInicial" class="hide dogPrincipal z-depth-3 responsive-img" src="https://images.dog.ceo/breeds/maltese/n02085936_18114.jpg">
+    <img onclick="onClickBotao();" class="hide dogPrincipal z-depth-3 responsive-img" src="asdasd">
+    <img onclick="onClickBotao();" class="hide dogPrincipal z-depth-3 responsive-img" src="asdasd">
+    <img onclick="onClickBotao();" class="hide dogPrincipal z-depth-3 responsive-img" src="asdasd">
+    <img onclick="onClickBotao();" class="hide dogPrincipal z-depth-3 responsive-img" src="asdasd">
+
+    <div id="loadingDog" style="/*margin-bottom: 35px;height: 50vh;max-height: 400px;justify-content: center;*/" class="valign-wrapper">
+        <div class="preloader-wrapper big active">
+            <div class="spinner-layer spinner-blue">
+              <div class="circle-clipper left">
+                <div class="circle"></div>
+              </div><div class="gap-patch">
+                <div class="circle"></div>
+              </div><div class="circle-clipper right">
+                <div class="circle"></div>
+              </div>
+            </div>
+      
+            <div class="spinner-layer spinner-red">
+              <div class="circle-clipper left">
+                <div class="circle"></div>
+              </div><div class="gap-patch">
+                <div class="circle"></div>
+              </div><div class="circle-clipper right">
+                <div class="circle"></div>
+              </div>
+            </div>
+      
+            <div class="spinner-layer spinner-yellow">
+              <div class="circle-clipper left">
+                <div class="circle"></div>
+              </div><div class="gap-patch">
+                <div class="circle"></div>
+              </div><div class="circle-clipper right">
+                <div class="circle"></div>
+              </div>
+            </div>
+      
+            <div class="spinner-layer spinner-green">
+              <div class="circle-clipper left">
+                <div class="circle"></div>
+              </div><div class="gap-patch">
+                <div class="circle"></div>
+              </div><div class="circle-clipper right">
+                <div class="circle"></div>
+              </div>
+            </div>
+        </div>
+    </div> 
+
+    <h6 onclick="onClickBotao();" id="quoteContainer" class="hide quote header">
+      <div id="quote" style="color:#76514f;display: inline-block;border-radius:10px;padding: 10px;line-height: 1.2em;" class="grey lighten-4 center-align flow-text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.d asd asdhaosdh oashd oashd asdha0sdhaishd ishd aoishd 
+      </div>
+    </h6>
+
+    <div class="hide hide-on-med-and-down">
+        <div style="background-color: #ca6481;" id="botaoDogo" onclick="onClickBotao();" class="btn-large waves-effect waves-light disabled">
+          Next
+        </div>
+    </div>
+
+    
+
+  </div>
+
+  <!-- <p class="copyright"></p> -->
+  <div class="bottom-line hide-on-med-and-up"></div>
+
+  <div class="bottom-line hide-on-small-and-down copyright">&copy; 2018 <a href="https://www.vitorbichara.com/">Vítor Bichara</a> & <a href="#">Thiago Gulmine</a></div>
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>

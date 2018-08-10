@@ -1,0 +1,161 @@
+html {
+    min-height: 100vh;
+  }
+
+
+body {
+    /* min-height: 100vh;
+    max-height: 100vh; */
+    background-color: #efebe9;
+    background-image: url('../img/sera200.png');
+    background-repeat: repeat;
+
+    display:flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.top-line {
+    flex-shrink: 0;
+    height: 5px;
+    width: 100%;
+    background-color: #b27175;
+}
+
+.bottom-line-mobile {
+    flex-shrink: 0;
+    height: 5px;
+    width: 100%;
+    background-color: #ca6481;
+
+    position: fixed;
+    bottom: 0;
+}
+
+.bottom-line {
+    color: #725a52;
+    font-size: 16px;
+    position: fixed;
+    bottom: 0;
+    flex-shrink: 0;
+    /* height: 5px; */
+    text-align: center;
+    border-bottom: #b27175 5px solid;
+    line-height: 2em;
+    width: 100%;
+    /* background-color: #ca6481; */
+    transition: all 0.3s;
+}
+
+.copyright a {
+    color:#af6f6f;
+}
+
+.mainContainer{
+    display: flex;
+    max-height: calc(100vh - 10px);
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.logo {
+    flex-shrink: 0;
+    max-height: 20vh;
+    margin-top: 2vh;
+    margin-bottom: 4vh;
+    transition: all 0.3s;
+}
+
+.logo:hover{
+    transform: scale(1.05);
+}
+
+@media only screen and (max-width: 992px) {
+    .logo {
+        max-height: 15vh;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
+    .bottom-line {
+        font-size: 12px;
+    }
+}
+/* #botaoDogo {
+    align-self: flex-end;
+    margin-bottom: 30vh;
+} */
+
+/* .bottomContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+} */
+.quote {
+    margin-bottom: 2vh;
+    font-size: 20px;
+}
+
+.dogPrincipal {
+    -webkit-animation-name: apareceDoido; 
+    -webkit-animation-duration: 0.5s; 
+    animation-name: apareceDoido;
+    animation-duration: 0.5s;
+    transition: all 0.3s;
+    cursor: pointer;
+    border-radius: 60px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    min-height: 30vh;
+    max-height: 40vh;
+
+    margin-bottom: 2vh;
+
+  }
+  
+  .dogPrincipal:hover {
+    transform: scale(1.05);
+  }
+  #quote {
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  #quote:hover {
+    transform: scale(1.05);
+  }
+
+  .quote {
+    -webkit-animation-name: apareceDoido; 
+    -webkit-animation-duration: 0.5s; 
+    animation-name: apareceDoido;
+    animation-duration: 0.5s;
+  }
+
+  
+  @-webkit-keyframes apareceDoido {
+    0%   {
+      transform: scale(0.1);
+    }
+    50%  {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  
+  }
+  
+  @keyframes apareceDoido {
+    0%   {
+      transform: scale(0.1);
+    }
+    50%  {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  
