@@ -44,10 +44,7 @@ function getOneQuote() {
   xhr.onreadystatechange = function () {
     if (xhr.readyState == XMLHttpRequest.DONE) {
         var responseJson = JSON.parse(xhr.responseText);
-        console.log(responseJson.author)
         quote.innerHTML = responseJson.quote;
-        //author.innerHTML = "-"+responseJson.author;
-
     }
   }
 }
@@ -63,10 +60,7 @@ function getQuotes() {
   xhr.onreadystatechange = function () {
     if (xhr.readyState == XMLHttpRequest.DONE) {
         var responseJson = JSON.parse(xhr.responseText);
-        console.log(responseJson)
-        //for (let i = 0; i < 100; i++) {
         quotes = responseJson;
-        //}
         jaPegouQuotes = true;
 
     }
@@ -87,7 +81,6 @@ function pega10Dogs() {
     if (xhr.readyState == XMLHttpRequest.DONE) {
 
         var responseJson = JSON.parse(xhr.responseText);
-        console.log(responseJson.status)
         if (responseJson.status == "success") {
           for (let i = 0; i < 10; i++) {
             if (i < imagensDogs.length && primeiraVez) {
@@ -150,7 +143,6 @@ function trocaImagem() {
       if (xhr.readyState == XMLHttpRequest.DONE) {
        
           var responseJson = JSON.parse(xhr.responseText);
-          console.log(responseJson.status)
           if (responseJson.status == "success") {
             imgDog.src = responseJson.message;
             

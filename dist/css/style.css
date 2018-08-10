@@ -46,6 +46,33 @@ body {
     transition: all 0.3s;
 }
 
+#chatBox {
+    -webkit-animation: chatBoxLoop 2s infinite alternate-reverse linear; /* Safari 4+ */
+    -moz-animation:    chatBoxLoop 2s infinite alternate-reverse linear; /* Fx 5+ */
+    -o-animation:      chatBoxLoop 2s infinite alternate-reverse linear; /* Opera 12+ */
+    animation:         chatBoxLoop 2s infinite alternate-reverse ease; /* IE 10+, Fx 29+ */
+}
+
+@-webkit-keyframes chatBoxLoop {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @-moz-keyframes chatBoxLoop {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @-o-keyframes chatBoxLoop {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @keyframes chatBoxLoop {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+
+
+
 .copyright a {
     color:#af6f6f;
 }
